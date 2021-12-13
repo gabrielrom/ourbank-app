@@ -11,15 +11,8 @@
 		81E9A1212767A11C008EE62E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1202767A11C008EE62E /* SceneDelegate.swift */; };
 		81E9A1282767A11E008EE62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E9A1272767A11E008EE62E /* Assets.xcassets */; };
 		81E9A12B2767A11E008EE62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E9A1292767A11E008EE62E /* LaunchScreen.storyboard */; };
-		81E9A1412767A997008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1402767A997008EE62E /* placeholder.swift */; };
-		81E9A1432767A9A0008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1422767A9A0008EE62E /* placeholder.swift */; };
-		81E9A1452767A9AA008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1442767A9AA008EE62E /* placeholder.swift */; };
-		81E9A1472767A9B4008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1462767A9B4008EE62E /* placeholder.swift */; };
-		81E9A1492767A9C5008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1482767A9C5008EE62E /* placeholder.swift */; };
-		81E9A14B2767A9CE008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A14A2767A9CE008EE62E /* placeholder.swift */; };
-		81E9A14D2767A9D7008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A14C2767A9D7008EE62E /* placeholder.swift */; };
-		81E9A14F2767A9DF008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A14E2767A9DF008EE62E /* placeholder.swift */; };
-		81E9A1512767A9ED008EE62E /* placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1502767A9ED008EE62E /* placeholder.swift */; };
+		81E9A1542767D793008EE62E /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E9A1532767D793008EE62E /* SignUpViewController.xib */; };
+		81E9A1582767D985008EE62E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9A1572767D985008EE62E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +28,9 @@
 		81E9A1462767A9B4008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
 		81E9A1482767A9C5008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
 		81E9A14A2767A9CE008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
-		81E9A14C2767A9D7008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
-		81E9A14E2767A9DF008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
 		81E9A1502767A9ED008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
+		81E9A1532767D793008EE62E /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		81E9A1572767D985008EE62E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +65,7 @@
 			children = (
 				81E9A1332767A336008EE62E /* Configs */,
 				81E9A1322767A327008EE62E /* Resources */,
+				81E9A12C2767A11E008EE62E /* Info.plist */,
 			);
 			path = "ourbank-app";
 			sourceTree = "<group>";
@@ -79,10 +73,10 @@
 		81E9A1322767A327008EE62E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				81E9A1522767D6E7008EE62E /* Components */,
 				81E9A1342767A356008EE62E /* Coordinators */,
 				81E9A1352767A35F008EE62E /* Scenes */,
 				81E9A1272767A11E008EE62E /* Assets.xcassets */,
-				81E9A12C2767A11E008EE62E /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -171,7 +165,7 @@
 		81E9A13C2767A43B008EE62E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				81E9A14E2767A9DF008EE62E /* placeholder.swift */,
+				81E9A1532767D793008EE62E /* SignUpViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,7 +173,7 @@
 		81E9A13D2767A445008EE62E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				81E9A14C2767A9D7008EE62E /* placeholder.swift */,
+				81E9A1572767D985008EE62E /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +192,13 @@
 				81E9A1482767A9C5008EE62E /* placeholder.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		81E9A1522767D6E7008EE62E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E9A1542767D793008EE62E /* SignUpViewController.xib in Resources */,
 				81E9A12B2767A11E008EE62E /* LaunchScreen.storyboard in Resources */,
 				81E9A1282767A11E008EE62E /* Assets.xcassets in Resources */,
 			);
@@ -270,17 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E9A1412767A997008EE62E /* placeholder.swift in Sources */,
-				81E9A14F2767A9DF008EE62E /* placeholder.swift in Sources */,
-				81E9A1492767A9C5008EE62E /* placeholder.swift in Sources */,
-				81E9A1452767A9AA008EE62E /* placeholder.swift in Sources */,
+				81E9A1582767D985008EE62E /* SignUpViewController.swift in Sources */,
 				81E9A11F2767A11C008EE62E /* AppDelegate.swift in Sources */,
-				81E9A1472767A9B4008EE62E /* placeholder.swift in Sources */,
 				81E9A1212767A11C008EE62E /* SceneDelegate.swift in Sources */,
-				81E9A1512767A9ED008EE62E /* placeholder.swift in Sources */,
-				81E9A14D2767A9D7008EE62E /* placeholder.swift in Sources */,
-				81E9A1432767A9A0008EE62E /* placeholder.swift in Sources */,
-				81E9A14B2767A9CE008EE62E /* placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
