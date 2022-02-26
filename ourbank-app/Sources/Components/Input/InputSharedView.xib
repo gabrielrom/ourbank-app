@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputSharedView" customModule="ourbank_app" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="5QR-Np-DYw" id="kiZ-cA-cmD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5QR-Np-DYw">
+                    <rect key="frame" x="0.0" y="0.0" width="496" height="102"/>
+                    <color key="backgroundColor" name="InputBackgroundColor"/>
+                    <color key="tintColor" name="ButtonPrimary"/>
+                    <color key="textColor" name="TiltlePrimary"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5QR-Np-DYw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ANj-8e-iva"/>
+                <constraint firstAttribute="bottom" secondItem="5QR-Np-DYw" secondAttribute="bottom" id="EFs-Mr-g7N"/>
+                <constraint firstAttribute="trailing" secondItem="5QR-Np-DYw" secondAttribute="trailing" id="csI-T4-HuK"/>
+                <constraint firstItem="5QR-Np-DYw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d3N-fo-gNY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="43.200000000000003" y="-345.07389162561577"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ButtonPrimary">
+            <color red="1" green="0.24705882352941178" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="InputBackgroundColor">
+            <color red="0.15294117647058825" green="0.13333333333333333" blue="0.24313725490196078" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TiltlePrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
