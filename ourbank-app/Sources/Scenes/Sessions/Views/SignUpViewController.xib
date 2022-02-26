@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="ourbank_app" customModuleProvider="target">
+            <connections>
+                <outlet property="inputEmail" destination="JGd-23-fkp" id="cv8-QO-gbf"/>
+                <outlet property="inputPassword" destination="g3r-H4-Pzl" id="xfO-6Q-NkL"/>
+                <outlet property="inputUserName" destination="cCh-mY-ukz" id="Yqh-B8-V3l"/>
+                <outlet property="view" destination="iN0-l3-epB" id="HXA-37-1Ih"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="SignUp">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGx-xB-HEp">
+                    <rect key="frame" x="120" y="182" width="174" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="9fU-3y-imc"/>
+                        <constraint firstAttribute="width" constant="174" id="r3m-AU-evw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
+                    <color key="textColor" name="TiltlePrimary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTs-XE-uoi">
+                    <rect key="frame" x="182.5" y="813" width="49" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                    <color key="textColor" name="ButtonTertiary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-qx-Rb1">
+                    <rect key="frame" x="100.5" y="785" width="213.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                    <color key="textColor" name="TitleSecondary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCh-mY-ukz" customClass="InputSharedView" customModule="ourbank_app" customModuleProvider="target">
+                    <rect key="frame" x="31" y="260" width="352" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="W8S-E0-C9p"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Name"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderFont" value="Roboto-Bold | 16"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="inputType" value="username"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGd-23-fkp" customClass="InputSharedView" customModule="ourbank_app" customModuleProvider="target">
+                    <rect key="frame" x="31" y="348" width="352" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="BVI-Sc-QbJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="E-mail"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderFont" value="Roboto-Bold | 16"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="inputType" value="email"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3r-H4-Pzl" customClass="InputSharedView" customModule="ourbank_app" customModuleProvider="target">
+                    <rect key="frame" x="31" y="436" width="352" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="vUz-eA-rTc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Password"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderFont" value="Roboto-Bold | 16"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="inputType" value="password"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="BackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JGd-23-fkp" firstAttribute="top" secondItem="cCh-mY-ukz" secondAttribute="bottom" constant="20" id="1v9-kE-nfq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cCh-mY-ukz" secondAttribute="trailing" constant="31" id="4TQ-SO-HIK"/>
+                <constraint firstItem="G2L-qx-Rb1" firstAttribute="centerX" secondItem="iTs-XE-uoi" secondAttribute="centerX" id="5ZO-Qi-i8U"/>
+                <constraint firstItem="g3r-H4-Pzl" firstAttribute="leading" secondItem="JGd-23-fkp" secondAttribute="leading" id="Hm2-wP-ybg"/>
+                <constraint firstItem="cCh-mY-ukz" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="I26-Bc-JpZ"/>
+                <constraint firstItem="iTs-XE-uoi" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="KvM-5s-hja"/>
+                <constraint firstItem="cCh-mY-ukz" firstAttribute="top" secondItem="aGx-xB-HEp" secondAttribute="bottom" constant="50" id="RkI-jo-Xac"/>
+                <constraint firstItem="JGd-23-fkp" firstAttribute="leading" secondItem="cCh-mY-ukz" secondAttribute="leading" id="T6g-NI-vKz"/>
+                <constraint firstItem="g3r-H4-Pzl" firstAttribute="top" secondItem="JGd-23-fkp" secondAttribute="bottom" constant="20" id="Xg4-cp-fKv"/>
+                <constraint firstItem="g3r-H4-Pzl" firstAttribute="trailing" secondItem="JGd-23-fkp" secondAttribute="trailing" id="Y8p-K5-pKB"/>
+                <constraint firstItem="aGx-xB-HEp" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="YgD-LG-TSb"/>
+                <constraint firstItem="cCh-mY-ukz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="31" id="bN3-gL-RdI"/>
+                <constraint firstItem="aGx-xB-HEp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="138" id="deJ-5n-TuQ"/>
+                <constraint firstItem="iTs-XE-uoi" firstAttribute="top" secondItem="G2L-qx-Rb1" secondAttribute="bottom" constant="9" id="gMg-YT-IS6"/>
+                <constraint firstItem="JGd-23-fkp" firstAttribute="trailing" secondItem="cCh-mY-ukz" secondAttribute="trailing" id="trk-ea-dTs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iTs-XE-uoi" secondAttribute="bottom" constant="30" id="wUO-XP-jq1"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="143"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.10980392156862745" green="0.070588235294117646" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonTertiary">
+            <color red="0.098039215686274508" green="0.6470588235294118" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TiltlePrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleSecondary">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
