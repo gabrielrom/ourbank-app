@@ -15,22 +15,14 @@ class InputSharedView: UIView, BaseXibViewProtocol {
    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupInitialView()
+        setupInitialView(nibName: nibName,
+                         owner: self)
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupInitialView()
-    }
-    
-    private func setupInitialView() {
-        let nib = UINib(nibName: self.nibName, bundle: .main)
-        let view = nib.instantiate(withOwner: self, options: nil).first as? UIView ?? UIView()
-        
-        view.frame = bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        
-        addSubview(view)
+        setupInitialView(nibName: nibName,
+                         owner: self)
     }
 }
 

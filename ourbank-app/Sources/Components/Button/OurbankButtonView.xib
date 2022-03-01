@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OurbankButtonView" customModule="ourbank_app" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="FOv-pC-by4" id="g0p-VQ-0hL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOv-pC-by4">
+                    <rect key="frame" x="0.0" y="0.0" width="397" height="76"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="TiltlePrimary"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Create">
+                        <fontDescription key="titleFontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                        <color key="baseForegroundColor" name="TiltlePrimary"/>
+                        <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FOv-pC-by4" secondAttribute="trailing" id="3Jd-JN-bQG"/>
+                <constraint firstAttribute="bottom" secondItem="FOv-pC-by4" secondAttribute="bottom" id="Lnu-Wr-bqO"/>
+                <constraint firstItem="FOv-pC-by4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PEf-to-llg"/>
+                <constraint firstItem="FOv-pC-by4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aR4-DS-MzD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="418.39999999999998" y="370.93596059113304"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TiltlePrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

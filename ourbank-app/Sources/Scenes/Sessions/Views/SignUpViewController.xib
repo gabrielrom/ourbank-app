@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="ourbank_app" customModuleProvider="target">
             <connections>
+                <outlet property="createAccountButton" destination="aK6-Q3-qqt" id="Uai-o7-aHI"/>
                 <outlet property="inputEmail" destination="JGd-23-fkp" id="cv8-QO-gbf"/>
                 <outlet property="inputPassword" destination="g3r-H4-Pzl" id="xfO-6Q-NkL"/>
                 <outlet property="inputUserName" destination="cCh-mY-ukz" id="Yqh-B8-V3l"/>
@@ -121,6 +122,34 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="inputType" value="password"/>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aK6-Q3-qqt" customClass="OurbankButtonView" customModule="ourbank_app" customModuleProvider="target">
+                    <rect key="frame" x="31" y="529" width="352" height="68"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="68" id="6g1-C3-jva"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Password"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderFont" value="Roboto-Bold | 16"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="inputType" value="password"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
+                            <color key="value" name="ButtonPrimary"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Create"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" name="BackgroundColor"/>
@@ -131,14 +160,17 @@
                 <constraint firstItem="g3r-H4-Pzl" firstAttribute="leading" secondItem="JGd-23-fkp" secondAttribute="leading" id="Hm2-wP-ybg"/>
                 <constraint firstItem="cCh-mY-ukz" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="I26-Bc-JpZ"/>
                 <constraint firstItem="iTs-XE-uoi" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="KvM-5s-hja"/>
+                <constraint firstItem="aK6-Q3-qqt" firstAttribute="trailing" secondItem="g3r-H4-Pzl" secondAttribute="trailing" id="RHe-ml-JEb"/>
                 <constraint firstItem="cCh-mY-ukz" firstAttribute="top" secondItem="aGx-xB-HEp" secondAttribute="bottom" constant="50" id="RkI-jo-Xac"/>
                 <constraint firstItem="JGd-23-fkp" firstAttribute="leading" secondItem="cCh-mY-ukz" secondAttribute="leading" id="T6g-NI-vKz"/>
                 <constraint firstItem="g3r-H4-Pzl" firstAttribute="top" secondItem="JGd-23-fkp" secondAttribute="bottom" constant="20" id="Xg4-cp-fKv"/>
                 <constraint firstItem="g3r-H4-Pzl" firstAttribute="trailing" secondItem="JGd-23-fkp" secondAttribute="trailing" id="Y8p-K5-pKB"/>
                 <constraint firstItem="aGx-xB-HEp" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="YgD-LG-TSb"/>
                 <constraint firstItem="cCh-mY-ukz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="31" id="bN3-gL-RdI"/>
+                <constraint firstItem="aK6-Q3-qqt" firstAttribute="leading" secondItem="g3r-H4-Pzl" secondAttribute="leading" id="cW6-ns-eQQ"/>
                 <constraint firstItem="aGx-xB-HEp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="138" id="deJ-5n-TuQ"/>
                 <constraint firstItem="iTs-XE-uoi" firstAttribute="top" secondItem="G2L-qx-Rb1" secondAttribute="bottom" constant="9" id="gMg-YT-IS6"/>
+                <constraint firstItem="aK6-Q3-qqt" firstAttribute="top" secondItem="g3r-H4-Pzl" secondAttribute="bottom" constant="25" id="l8e-29-mjF"/>
                 <constraint firstItem="JGd-23-fkp" firstAttribute="trailing" secondItem="cCh-mY-ukz" secondAttribute="trailing" id="trk-ea-dTs"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iTs-XE-uoi" secondAttribute="bottom" constant="30" id="wUO-XP-jq1"/>
             </constraints>
@@ -148,6 +180,9 @@
     <resources>
         <namedColor name="BackgroundColor">
             <color red="0.10980392156862745" green="0.070588235294117646" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonPrimary">
+            <color red="1" green="0.24705882352941178" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ButtonTertiary">
             <color red="0.098039215686274508" green="0.6470588235294118" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

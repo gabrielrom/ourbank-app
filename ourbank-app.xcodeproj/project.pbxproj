@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81232E5627CD7AC2002FF633 /* OurbankButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81232E5527CD7AC2002FF633 /* OurbankButtonView.swift */; };
+		81232E5827CD7AD5002FF633 /* OurbankButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81232E5727CD7AD5002FF633 /* OurbankButtonView.xib */; };
 		81B22CEE27C954FE00AA2C3D /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B22CED27C954FE00AA2C3D /* UIView+Utils.swift */; };
 		81B22CF127C993E000AA2C3D /* BaseXibViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B22CF027C993DF00AA2C3D /* BaseXibViewProtocol.swift */; };
 		81C9EC9B27C81C3D00F084E1 /* InputSharedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81C9EC9A27C81C3D00F084E1 /* InputSharedView.xib */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81232E5527CD7AC2002FF633 /* OurbankButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurbankButtonView.swift; sourceTree = "<group>"; };
+		81232E5727CD7AD5002FF633 /* OurbankButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OurbankButtonView.xib; sourceTree = "<group>"; };
 		81B22CED27C954FE00AA2C3D /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		81B22CF027C993DF00AA2C3D /* BaseXibViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibViewProtocol.swift; sourceTree = "<group>"; };
 		81C9EC9A27C81C3D00F084E1 /* InputSharedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputSharedView.xib; sourceTree = "<group>"; };
@@ -56,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81232E5427CD7A6F002FF633 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				81232E5527CD7AC2002FF633 /* OurbankButtonView.swift */,
+				81232E5727CD7AD5002FF633 /* OurbankButtonView.xib */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		81B22CEC27C954E200AA2C3D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +242,7 @@
 		81E9A1522767D6E7008EE62E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				81232E5427CD7A6F002FF633 /* Button */,
 				81B22CF227C998CB00AA2C3D /* Input */,
 			);
 			path = Components;
@@ -299,6 +313,7 @@
 				81E9A12B2767A11E008EE62E /* LaunchScreen.storyboard in Resources */,
 				81DC95FA2799C22D003626D3 /* Roboto-Bold.ttf in Resources */,
 				81E9A1282767A11E008EE62E /* Assets.xcassets in Resources */,
+				81232E5827CD7AD5002FF633 /* OurbankButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +330,7 @@
 				81B22CEE27C954FE00AA2C3D /* UIView+Utils.swift in Sources */,
 				81C9EC9D27C81D0B00F084E1 /* InputSharedView.swift in Sources */,
 				81E9A1212767A11C008EE62E /* SceneDelegate.swift in Sources */,
+				81232E5627CD7AC2002FF633 /* OurbankButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
