@@ -6,6 +6,18 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var inputPassword: InputSharedView!
     @IBOutlet weak var createAccountButton: OurbankButtonView!
     
+    // Properties
+    let viewModel: SessionsCoordinator
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    init(viewModel: SessionsCoordinator) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +36,11 @@ class SignUpViewController: UIViewController {
         print("email: \(inputEmail.textField.text ?? "")")
         print("password: \(inputPassword.textField.text ?? "")")
         print(String(repeating: "=", count: 50))
+    }
+    
+    @IBAction func goToSigninScreen(_ sender: Any) {
+        print("Indo para a tele de sign in ...")
+        viewModel.goToSignin()
     }
 }
 

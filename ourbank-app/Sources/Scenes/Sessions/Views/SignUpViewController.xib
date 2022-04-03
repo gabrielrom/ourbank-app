@@ -38,18 +38,6 @@
                     <color key="textColor" name="TiltlePrimary"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTs-XE-uoi">
-                    <rect key="frame" x="182.5" y="813" width="49" height="19"/>
-                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
-                    <color key="textColor" name="ButtonTertiary"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-qx-Rb1">
-                    <rect key="frame" x="100.5" y="785" width="213.5" height="19"/>
-                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
-                    <color key="textColor" name="TitleSecondary"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCh-mY-ukz" customClass="InputSharedView" customModule="ourbank_app" customModuleProvider="target">
                     <rect key="frame" x="31" y="260" width="352" height="68"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -150,16 +138,37 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Create"/>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9i-Ep-gnh">
+                    <rect key="frame" x="170" y="807" width="74" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="uVb-yn-fEW"/>
+                    </constraints>
+                    <color key="tintColor" name="TiltlePrimary"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Sign in"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Sign in">
+                        <fontDescription key="titleFontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                        <color key="baseForegroundColor" name="ButtonTertiary"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="goToSigninScreen:" destination="-1" eventType="touchUpInside" id="2ZA-it-is7"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-qx-Rb1">
+                    <rect key="frame" x="100.5" y="779" width="213.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                    <color key="textColor" name="TitleSecondary"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" name="BackgroundColor"/>
             <constraints>
                 <constraint firstItem="JGd-23-fkp" firstAttribute="top" secondItem="cCh-mY-ukz" secondAttribute="bottom" constant="20" id="1v9-kE-nfq"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cCh-mY-ukz" secondAttribute="trailing" constant="31" id="4TQ-SO-HIK"/>
-                <constraint firstItem="G2L-qx-Rb1" firstAttribute="centerX" secondItem="iTs-XE-uoi" secondAttribute="centerX" id="5ZO-Qi-i8U"/>
+                <constraint firstItem="z9i-Ep-gnh" firstAttribute="top" secondItem="G2L-qx-Rb1" secondAttribute="bottom" constant="9" id="By1-8Y-1if"/>
                 <constraint firstItem="g3r-H4-Pzl" firstAttribute="leading" secondItem="JGd-23-fkp" secondAttribute="leading" id="Hm2-wP-ybg"/>
                 <constraint firstItem="cCh-mY-ukz" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="I26-Bc-JpZ"/>
-                <constraint firstItem="iTs-XE-uoi" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="KvM-5s-hja"/>
                 <constraint firstItem="aK6-Q3-qqt" firstAttribute="trailing" secondItem="g3r-H4-Pzl" secondAttribute="trailing" id="RHe-ml-JEb"/>
                 <constraint firstItem="cCh-mY-ukz" firstAttribute="top" secondItem="aGx-xB-HEp" secondAttribute="bottom" constant="50" id="RkI-jo-Xac"/>
                 <constraint firstItem="JGd-23-fkp" firstAttribute="leading" secondItem="cCh-mY-ukz" secondAttribute="leading" id="T6g-NI-vKz"/>
@@ -169,12 +178,13 @@
                 <constraint firstItem="cCh-mY-ukz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="31" id="bN3-gL-RdI"/>
                 <constraint firstItem="aK6-Q3-qqt" firstAttribute="leading" secondItem="g3r-H4-Pzl" secondAttribute="leading" id="cW6-ns-eQQ"/>
                 <constraint firstItem="aGx-xB-HEp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="138" id="deJ-5n-TuQ"/>
-                <constraint firstItem="iTs-XE-uoi" firstAttribute="top" secondItem="G2L-qx-Rb1" secondAttribute="bottom" constant="9" id="gMg-YT-IS6"/>
                 <constraint firstItem="aK6-Q3-qqt" firstAttribute="top" secondItem="g3r-H4-Pzl" secondAttribute="bottom" constant="25" id="l8e-29-mjF"/>
+                <constraint firstItem="z9i-Ep-gnh" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ow3-dp-HQy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="z9i-Ep-gnh" secondAttribute="bottom" constant="30" id="rnG-Me-rIB"/>
                 <constraint firstItem="JGd-23-fkp" firstAttribute="trailing" secondItem="cCh-mY-ukz" secondAttribute="trailing" id="trk-ea-dTs"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iTs-XE-uoi" secondAttribute="bottom" constant="30" id="wUO-XP-jq1"/>
+                <constraint firstItem="G2L-qx-Rb1" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="zBM-nx-xeh"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="143"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
         </view>
     </objects>
     <resources>
