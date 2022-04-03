@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		81232E5627CD7AC2002FF633 /* OurbankButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81232E5527CD7AC2002FF633 /* OurbankButtonView.swift */; };
 		81232E5827CD7AD5002FF633 /* OurbankButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81232E5727CD7AD5002FF633 /* OurbankButtonView.xib */; };
+		81AC3C4A27F92CCF00B327D9 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC3C4927F92CCF00B327D9 /* MainCoordinator.swift */; };
+		81AC3C4D27F92D2100B327D9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC3C4C27F92D2100B327D9 /* Coordinator.swift */; };
+		81AC3C4F27F92D3900B327D9 /* ChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC3C4E27F92D3900B327D9 /* ChildCoordinator.swift */; };
+		81AC3C5227F93ADA00B327D9 /* SessionsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC3C5127F93ADA00B327D9 /* SessionsCoordinator.swift */; };
+		81AC3C5427F96A2900B327D9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC3C5327F96A2900B327D9 /* SignInViewController.swift */; };
+		81AC3C5627F96A8600B327D9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81AC3C5527F96A8600B327D9 /* SignInViewController.xib */; };
 		81B22CEE27C954FE00AA2C3D /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B22CED27C954FE00AA2C3D /* UIView+Utils.swift */; };
 		81B22CF127C993E000AA2C3D /* BaseXibViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B22CF027C993DF00AA2C3D /* BaseXibViewProtocol.swift */; };
 		81C9EC9B27C81C3D00F084E1 /* InputSharedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81C9EC9A27C81C3D00F084E1 /* InputSharedView.xib */; };
@@ -27,6 +33,12 @@
 /* Begin PBXFileReference section */
 		81232E5527CD7AC2002FF633 /* OurbankButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurbankButtonView.swift; sourceTree = "<group>"; };
 		81232E5727CD7AD5002FF633 /* OurbankButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OurbankButtonView.xib; sourceTree = "<group>"; };
+		81AC3C4927F92CCF00B327D9 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		81AC3C4C27F92D2100B327D9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		81AC3C4E27F92D3900B327D9 /* ChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCoordinator.swift; sourceTree = "<group>"; };
+		81AC3C5127F93ADA00B327D9 /* SessionsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsCoordinator.swift; sourceTree = "<group>"; };
+		81AC3C5327F96A2900B327D9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		81AC3C5527F96A8600B327D9 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		81B22CED27C954FE00AA2C3D /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 		81B22CF027C993DF00AA2C3D /* BaseXibViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibViewProtocol.swift; sourceTree = "<group>"; };
 		81C9EC9A27C81C3D00F084E1 /* InputSharedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputSharedView.xib; sourceTree = "<group>"; };
@@ -44,7 +56,6 @@
 		81E9A1422767A9A0008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
 		81E9A1462767A9B4008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
 		81E9A1482767A9C5008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
-		81E9A1502767A9ED008EE62E /* placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeholder.swift; sourceTree = "<group>"; };
 		81E9A1532767D793008EE62E /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		81E9A1572767D985008EE62E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +80,14 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		81AC3C5027F935E500B327D9 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				81AC3C5127F93ADA00B327D9 /* SessionsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		81B22CEC27C954E200AA2C3D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +99,8 @@
 		81B22CEF27C993C100AA2C3D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				81AC3C4C27F92D2100B327D9 /* Coordinator.swift */,
+				81AC3C4E27F92D3900B327D9 /* ChildCoordinator.swift */,
 				81B22CF027C993DF00AA2C3D /* BaseXibViewProtocol.swift */,
 			);
 			path = Protocols;
@@ -157,7 +178,7 @@
 		81E9A1342767A356008EE62E /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				81E9A1502767A9ED008EE62E /* placeholder.swift */,
+				81AC3C4927F92CCF00B327D9 /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -174,7 +195,8 @@
 		81E9A1362767A375008EE62E /* Sessions */ = {
 			isa = PBXGroup;
 			children = (
-				81E9A13F2767A45D008EE62E /* Models */,
+				81AC3C5027F935E500B327D9 /* Coordinators */,
+				81E9A13F2767A45D008EE62E /* ViewModels */,
 				81E9A13D2767A445008EE62E /* ViewControllers */,
 				81E9A13C2767A43B008EE62E /* Views */,
 			);
@@ -186,17 +208,17 @@
 			children = (
 				81E9A13B2767A3FD008EE62E /* Views */,
 				81E9A13A2767A3E1008EE62E /* ViewControllers */,
-				81E9A1382767A3C4008EE62E /* Models */,
+				81E9A1382767A3C4008EE62E /* ViewModels */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		81E9A1382767A3C4008EE62E /* Models */ = {
+		81E9A1382767A3C4008EE62E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				81E9A1462767A9B4008EE62E /* placeholder.swift */,
 			);
-			path = Models;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		81E9A13A2767A3E1008EE62E /* ViewControllers */ = {
@@ -219,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				81E9A1532767D793008EE62E /* SignUpViewController.xib */,
+				81AC3C5527F96A8600B327D9 /* SignInViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,16 +250,17 @@
 			isa = PBXGroup;
 			children = (
 				81E9A1572767D985008EE62E /* SignUpViewController.swift */,
+				81AC3C5327F96A2900B327D9 /* SignInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		81E9A13F2767A45D008EE62E /* Models */ = {
+		81E9A13F2767A45D008EE62E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				81E9A1482767A9C5008EE62E /* placeholder.swift */,
 			);
-			path = Models;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		81E9A1522767D6E7008EE62E /* Components */ = {
@@ -264,6 +288,8 @@
 			dependencies = (
 			);
 			name = "ourbank-app";
+			packageProductDependencies = (
+			);
 			productName = "ourbank-app";
 			productReference = 81E9A11B2767A11C008EE62E /* ourbank-app.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +318,8 @@
 				Base,
 			);
 			mainGroup = 81E9A1122767A11C008EE62E;
+			packageReferences = (
+			);
 			productRefGroup = 81E9A11C2767A11C008EE62E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,6 +341,7 @@
 				81E9A12B2767A11E008EE62E /* LaunchScreen.storyboard in Resources */,
 				81DC95FA2799C22D003626D3 /* Roboto-Bold.ttf in Resources */,
 				81E9A1282767A11E008EE62E /* Assets.xcassets in Resources */,
+				81AC3C5627F96A8600B327D9 /* SignInViewController.xib in Resources */,
 				81232E5827CD7AD5002FF633 /* OurbankButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,10 +354,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				81B22CF127C993E000AA2C3D /* BaseXibViewProtocol.swift in Sources */,
+				81AC3C5227F93ADA00B327D9 /* SessionsCoordinator.swift in Sources */,
+				81AC3C4A27F92CCF00B327D9 /* MainCoordinator.swift in Sources */,
 				81E9A1582767D985008EE62E /* SignUpViewController.swift in Sources */,
+				81AC3C4F27F92D3900B327D9 /* ChildCoordinator.swift in Sources */,
 				81E9A11F2767A11C008EE62E /* AppDelegate.swift in Sources */,
 				81B22CEE27C954FE00AA2C3D /* UIView+Utils.swift in Sources */,
 				81C9EC9D27C81D0B00F084E1 /* InputSharedView.swift in Sources */,
+				81AC3C5427F96A2900B327D9 /* SignInViewController.swift in Sources */,
+				81AC3C4D27F92D2100B327D9 /* Coordinator.swift in Sources */,
 				81E9A1212767A11C008EE62E /* SceneDelegate.swift in Sources */,
 				81232E5627CD7AC2002FF633 /* OurbankButtonView.swift in Sources */,
 			);
